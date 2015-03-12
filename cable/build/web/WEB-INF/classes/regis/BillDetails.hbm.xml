@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 28, 2014 1:47:12 PM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="regis.BillDetails" table="bill_details" catalog="d_tv">
+        <id name="username" type="string">
+            <column name="USERNAME" length="30" />
+            <generator class="assigned" />
+        </id>
+        <property name="subscriptionPeriod" type="java.lang.Integer">
+            <column name="SUBSCRIPTION_PERIOD" />
+        </property>
+        <property name="currentBalance" type="java.lang.Integer">
+            <column name="CURRENT_BALANCE" />
+        </property>
+        <property name="monthlyBill" type="java.lang.Integer">
+            <column name="MONTHLY_BILL" />
+        </property>
+        <property name="lastRecharge" type="java.lang.Integer">
+            <column name="LAST_RECHARGE" />
+        </property>
+    </class>
+</hibernate-mapping>
